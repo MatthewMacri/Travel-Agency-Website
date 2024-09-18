@@ -1,0 +1,303 @@
+/*Padronizar tags*/
+*{
+    font: 14px sans-serif;
+    margin: 0px;
+    padding: 0px;
+    outline: none;
+}
+
+/*Fundo*/
+body{
+    background-image: url("../imagens/fundo.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/*Topo*/
+header{
+    background-color: rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+}
+
+header h1{
+    float: left;
+    margin: 20px;
+    color: #fff;
+    font-size: 26px;
+}
+
+header nav{
+    float: right;
+}
+
+header a{
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 25px;
+    margin-right: 20px;
+    transition: color 0.3s;
+}
+
+header a:hover{
+    color: #000;
+}
+
+/*Anúncio*/
+.anuncio{
+    width: 50%;
+    margin-top: 8%;
+    margin-left: 5%;
+}
+
+.anuncio h1{
+    color: #fff;
+    text-shadow: 2px 2px 2px #000;
+    font-size: 50px;
+    line-height: 70px;
+}
+
+/*Reserva*/
+.reserva{
+    background-color: rgba(53, 176, 0, 0.7);
+    border-radius: 5px;
+    border: 1px solid #39a808;
+    width: 580px;
+    margin-top: 8%;
+    margin-left: 5%;
+    padding: 1%;
+}
+
+.reserva h1{
+    color: #fff;
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+.reserva select{
+    border: 1px solid #e8e8e8;
+    border-radius: 5px;
+}
+
+.reserva input[type="date"]{
+    border: 1px solid #e8e8e8;
+    border-radius: 5px;
+    margin-left: 10px;
+    width: 140px;
+}
+
+.reserva input[type="button"]{
+    border: 1px solid #e8e8e8;
+    border-radius: 5px;
+    padding: 3px 12px;
+    margin-left: 10px;
+}
+
+/* Conteúdo Principal */
+main{
+    width: 990px;
+    margin: 0 auto;
+    margin-top: 350px;
+}
+
+/* Ofertas */
+.ofertas h1{
+    text-align: center;
+    font-size: 30px;
+    padding: 40px;
+}
+
+.ofertas li{
+    display: inline-block;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+    transition: box-shadow 0.5s, transform 0.5s;
+}
+
+.ofertas li:nth-child(2),
+.ofertas li:nth-child(3),
+.ofertas li:nth-child(6),
+.ofertas li:nth-child(7){
+    margin-left: 15px;
+}
+
+.ofertas li:nth-child(3),
+.ofertas li:nth-child(7){
+    margin-right: 15px;
+}
+
+
+
+.ofertas li:hover{
+    box-shadow: 0px 0px 10px #999;
+    transform: translate(0px, -20px);
+}
+
+.ofertas img{
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.ofertas a{
+    text-decoration: none;
+}
+
+.ofertas p{
+    text-decoration: none;
+    color: #fff;
+    background-color: rgb(53, 176, 0);
+    padding: 10px;
+    border-radius: 0px 0px 10px 10px;
+    margin-top: -3px;
+}
+
+/*Depoimentos*/
+.depoimentos{
+    border-top: 1px dotted #ccc;
+    margin-top: 50px;
+}
+
+.depoimentos h1{
+    text-align: center;
+    font-size: 30px;
+    padding: 40px;
+}
+
+.depoimentos img{
+    width: 100px;
+    border-radius: 80px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.depoimentos li{
+    width: 280px;
+    padding: 10px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    text-align: center;
+    color: #8b8b8b;
+}
+
+.depoimentos li:nth-child(2){
+    margin: 0px 38px;
+}
+
+.depoimentos p:nth-child(1){
+    text-align: justify;
+    line-height: 19px;
+    text-indent: 15px;
+    margin-bottom: 20px;
+    font-size: 12px;
+}
+
+/*Rodapé*/
+footer{
+    margin-top: 80px;
+    background-image: url("../imagens/rodape.jpg");
+    background-size: contain;
+}
+
+footer ul{
+    color: #fff;
+    display: inline-block;
+    margin-left: 100px;
+    margin-top: 100px;
+}
+
+footer li{
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+footer li:first-child{
+    margin-bottom: 40px;
+    font-weight: bold;
+    font-size: 16px;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 10px;
+}
+
+footer p{
+    color: #fff;
+    text-align: center;
+    padding: 30px;
+    font-size: 12px;
+}
+
+/*Contato*/
+.contato{
+    overflow: hidden;
+}
+
+.contato h1{
+    text-align: center;
+    font-size: 30px;
+    padding: 40px;
+}
+
+.contato iframe{
+    float: left;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 470px;
+    height: 329px;
+}
+
+.contato form{
+    float: right;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 470px;
+}
+
+.contato input[type="text"],
+.contato textarea{
+    width: 436px;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+.contato textarea{
+    height: 100px;
+    resize: none;
+}
+
+.contato input[type="submit"]{
+    padding: 5px 30px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+/*Sobre*/
+.sobre{
+    overflow: hidden;
+}
+
+.sobre h1{
+    text-align: center;
+    font-size: 30px;
+    padding: 40px;
+}
+
+.sobre img{
+    float: left;
+    width: 350px;
+}
+
+.sobre p{
+    float: right;
+    width: 550px;
+    margin-top: 40px;
+    text-indent: 15px;
+    line-height: 20px;
+    text-align: justify;
+}
